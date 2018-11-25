@@ -31,7 +31,7 @@
   gegevens op een leuke aantrekkelijke manier.<br/>
   Optional features: Meerdere factoren toevoegen voor de werkelijke complexiteit van het onderzoek.
 
-![alt tag](https://github.com/MSVermet/Project/blob/master/doc/Project-visualisation.png)
+![alt tag](Project/netherlands_land_1970.png)
 
 ### Data sources: <br />
 [https://data.oecd.org](https://data.oecd.org)<br />

@@ -4,9 +4,8 @@
 ### Onderwerp:
 - Teeltselectie;op basis van agricultuurgebieden en klimaatfactoren in Nederland.<br/>
   Elk teeltproduct heeft een bepaalde hoeveelheid neerslag en temperatuur om optimaal te kunnen groeien. Door te kijken naar deze eigenschappen 
-  van verschillende groentes en te kijken naar de klimaatfactoren in Nederland in gebieden waar agricultuur plaats vindt is het mogelijk de 
-  optimale groente per maand in het jaar te kunnen vinden.
-   >op basis van regenval de meest optimale teeltproducten te kunnen selecteren voor specifieke gebieden in Nederland. <br/>
+  van verschillende teeltproducten en te kijken naar de klimaatfactoren in Nederland in gebieden waar agricultuur plaats vindt is het mogelijk het optimale teeltproduct per maand in het jaar te kunnen vinden.
+   > Op basis van regenval en temperatuur optimale teeltproducten (later gespecificeerd) voor agricultuurgebieden bepalen<br/>
   
     
  ### Doel:

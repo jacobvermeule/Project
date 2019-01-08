@@ -3,10 +3,9 @@
 
 ### Onderwerp:
 - Teeltselectie;op basis van agricultuurgebieden en klimaatfactoren in Nederland.<br/>
-  Door te kijken naar waar er in Nederland agricultuur plaats vindt en te kijken wat de optimale klimaatomstandigheden zijn van bepaalde teeltproducten. <br/>
   Elk teeltproduct heeft een bepaalde hoeveelheid neerslag en temperatuur om optimaal te kunnen groeien. Door te kijken naar deze eigenschappen 
-  van verschillende groentes en te kijken naar de klimaatfactoren in Nederland in gebieden waar agricultuur plaats vindt is het mogelijk de 
-  optimale groente per maand in het jaar te kunnen vinden.
+  van verschillende teeltproducten en te kijken naar de klimaatfactoren in Nederland in gebieden waar agricultuur plaats vindt is het mogelijk het optimale teeltproduct per maand in het jaar te kunnen vinden.
+   > Op basis van regenval en temperatuur optimale teeltproducten (later gespecificeerd) voor agricultuurgebieden bepalen<br/>
   
     
  ### Doel:
@@ -31,7 +30,7 @@
   gegevens op een leuke aantrekkelijke manier.<br/>
   Optional features: Meerdere factoren toevoegen voor de werkelijke complexiteit van het onderzoek.
 
-![alt tag](https://github.com/jacobvermeule/Project/blob/master/netherlands_land_1970.png)
+![alt tag](https://github.com/jacobvermeule/Project/blob/master/doc/Slide1.PNG)
 
 ### Data sources: <br />
 [https://data.oecd.org](https://data.oecd.org)<br />

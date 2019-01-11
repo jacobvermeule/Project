@@ -15,3 +15,7 @@ Data verzamelt voor het project;
 # dag 4
 * Data naar json format geconverteerd
 
+# dag 4
+* PROCESS.md aangemaakt
+* Structuur van het project geordend
+

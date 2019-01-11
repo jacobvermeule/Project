@@ -10,7 +10,7 @@ import json
 f = open('code/data/csvs/vegetables.csv', 'r')
 
 # Change column names
-reader = csv.DictReader(f, fieldnames = ("Vegetables", "Temperature (C)", "Precipitation (mm)", "Days", "Soil (pH)", "Yield (kg/m3)"
+reader = csv.DictReader(f, fieldnames = ("Vegetables", "Temperature_C", "Precipitation_mm", "Days", "Soil_pH", "Yield_kgm3"
 ))
 
 # Parse the CSV into JSON

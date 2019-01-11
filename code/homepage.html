@@ -11,5 +11,53 @@
 </body>
 <?xml version="1.0" encoding="utf-8" standalone="no"?><!-- Creator: Centraal Bureau van de Statistiek -->
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<img src="https://upload.wikimedia.org/wikipedia/commons/7/71/Nederland_gemeenten_2009.svg" />
+<div id="map"><div/>
+  <script src="d3/d3-tip.js"></script>
+  <script src="http://d3js.org/queue.v1.min.js"></script>
+<script src="http://d3js.org/topojson.v1.min.js"></script>
+  <script type="text/javascript" src="d3/d3.v3.js"></script>
+  <script>
+    var width = window.innerWidth,
+    height = window.innerHeight,
+    centered,
+    clicked_point;
+    // var margin = {top: 0, right: 0, bottom: 0, left: 0},
+    //               width = 960 - margin.left - margin.right,
+    //               height = 700 - margin.top - margin.bottom;
+
+
+      var projection = d3.geo.mercator()
+          .center([13,52])
+          .scale([width*10])
+          .translate( [width / 0.55, height / 1]);
+
+      var svg = d3.select("body").append("svg")
+          .attr("width", width)
+          .attr("height", 1150)
+          .attr("class", "map");
+
+      var path = d3.geo.path()
+          .projection(projection);
+
+      // load and display the World
+      d3.json("data/jsons/nederland.json", function(error, topology) {
+
+
+          svg.selectAll("path")
+            .data(topojson.feature(topology, topology.objects.Gemeentegrenzen)
+                .features)
+            .enter()
+            .append("path")
+            .attr("d", path)
+            .style("fill", "white")
+            .style('stroke', 'darkgrey')
+            .style('stroke-width', 1.5)
+            .style("opacity",0.8)
+            .attr("class", function(d, i) {
+                  return d.properties.name;
+              });
+            ;
+       });
+
+      </script>
 <script type="text/javascript" src="landuse.js"> </script>

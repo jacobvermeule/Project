@@ -10,7 +10,7 @@ import json
 f = open('code/data/csvs/landuse.csv', 'r')
 
 # Change column names
-reader = csv.DictReader(f, fieldnames = ("Regio's", "Perioden", "Totale oppervlakte (ha)", "Agrarisch terrein (ha)"
+reader = csv.DictReader(f, fieldnames = ("Regio", "Perioden", "Totale_oppervlakte_ha", "Agrarisch_terrein_ha"
 ))
 
 # Parse the CSV into JSON

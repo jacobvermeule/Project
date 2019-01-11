@@ -5,13 +5,13 @@ Data verzamelt voor het project;
 * svg van nederlandse gemeenten gevonden.
 * Data van landgebruik in nederlandse gemeenten verzamelt.
 
-# day 2
+# dag 2
 * DESIGN.md gemaakt
 * Website aangemaakt met keuzemenu 
 
-# day 3
+# dag 3
 * svg van Nederland op de hoofdpagina gezet
 
-# day 4
+# dag 4
 * Data naar json format geconverteerd
 

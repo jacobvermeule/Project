@@ -7,7 +7,7 @@ Data verzamelt voor het project;
 
 # dag 2
 * DESIGN.md gemaakt
-* Website aangemaakt met keuzemenu 
+* Website aangemaakt met keuzemenu
 
 # dag 3
 * svg van Nederland op de hoofdpagina gezet
@@ -15,7 +15,7 @@ Data verzamelt voor het project;
 # dag 4
 * Data naar json format geconverteerd
 
-# dag 4
+# dag 5
 * PROCESS.md aangemaakt
 * Structuur van het project geordend
-
+* Topojson van map gemaakt. 

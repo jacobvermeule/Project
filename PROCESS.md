@@ -18,4 +18,7 @@ Data verzamelt voor het project;
 # dag 5
 * PROCESS.md aangemaakt
 * Structuur van het project geordend
-* Topojson van map gemaakt. 
+* Topojson van map gemaakt.
+
+# dag 6
+* d3 v3 naar d3 v5

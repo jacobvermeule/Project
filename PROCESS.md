@@ -22,3 +22,4 @@ Data verzamelt voor het project;
 
 # dag 6
 * d3 v3 naar d3 v5
+* data van eerste json (van landuse) ingeladen in topojson

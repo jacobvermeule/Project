@@ -23,7 +23,7 @@
     // Browser global.
     var d3 = root.d3
     // eslint-disable-next-line no-param-reassign
-    // root.d3.tip = factory(d3, d3)
+    root.d3.tip = factory(d3, d3)
   }
 }(this, function(d3Collection, d3Selection) {
   // Public - contructs a new tooltip

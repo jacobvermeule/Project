@@ -20,7 +20,8 @@ var tip = d3.tip()
             .attr("class", "d3-tip")
             .offset([-10, 0])
             .html(function(d) {
-                    return "<strong>Gemeente: </strong><span class='details'>" + d.properties.GM_NAAM + "<br></span>" + "<strong>Percentage: </strong><span class='details'>" + format(d.Percentage) +"</span>";
+                    return "<strong>Gemeente: </strong><span class='details'>" + d.properties.GM_NAAM + "<br></span>" + "<strong>Totale oppervlakte: </strong><span class='details'>" + d.properties.Totale_oppervlakte_ha +"<br></span>"
+                    + "<strong>Agrarisch terrein: </strong><span class='details'>" + d.properties.Agrarisch_terrein_ha + "<br></span>";
                   });
 
 // determine color scale
@@ -49,9 +50,9 @@ var tip = d3.tip()
   var IndexbyGem2 = {};
   var IndexbyGem3 = {};
   landuse.forEach(function(d) { IndexbyGem[d.Regio] = +d.Agrarisch_terrein_ha; });
-  nederland.objects.Gemeentegrenzen.geometries.forEach(function(d) { d.Agrarisch_terrein_ha = IndexbyGem[d.properties.GM_NAAM] });
+  nederland.objects.Gemeentegrenzen.geometries.forEach(function(d) { d.properties.Agrarisch_terrein_ha = IndexbyGem[d.properties.GM_NAAM] });
   landuse.forEach(function(d) { IndexbyGem2[d.Regio] = +d.Totale_oppervlakte_ha; });
-  nederland.objects.Gemeentegrenzen.geometries.forEach(function(d) { d.Totale_oppervlakte_ha = IndexbyGem2[d.properties.GM_NAAM] });
+  nederland.objects.Gemeentegrenzen.geometries.forEach(function(d) { d.properties.Totale_oppervlakte_ha = IndexbyGem2[d.properties.GM_NAAM] });
   landuse.forEach(function(d) { IndexbyGem3[d.Regio] = +(d.Agrarisch_terrein_ha/d.Totale_oppervlakte_ha); });
   nederland.objects.Gemeentegrenzen.geometries.forEach(function(d) { d.Percentage = IndexbyGem3[d.properties.GM_NAAM] });
 

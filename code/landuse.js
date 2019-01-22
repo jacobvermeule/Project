@@ -3,7 +3,8 @@ window.onload = function() {
 
   var nederland = "data/jsons/nederland.json";
   var landuse = "data/jsons/landuse.json";
-  var requests = [d3.json(nederland), d3.json(landuse)];
+  var weer = "data/jsons/weer.json";
+  var requests = [d3.json(nederland), d3.json(landuse), d3.json(weer)];
 
 
 Promise.all(requests).then(function(response) {
@@ -13,6 +14,7 @@ centered,
 clicked_point;
 var nederland = response[0];
 var landuse = response[1];
+var weer = response[2];
 var format = d3.format(",");
 
 // Define the div for the tooltip
@@ -45,16 +47,19 @@ var tip = d3.tip()
   svg.call(tip);
 
   ready(nederland, landuse)
-  function ready(nederland, landuse) {
+  function ready(nederland, landuse, weer) {
   var IndexbyGem = {};
   var IndexbyGem2 = {};
   var IndexbyGem3 = {};
+  var IndexbyGem4 = {};
   landuse.forEach(function(d) { IndexbyGem[d.Regio] = +d.Agrarisch_terrein_ha; });
   nederland.objects.Gemeentegrenzen.geometries.forEach(function(d) { d.properties.Agrarisch_terrein_ha = IndexbyGem[d.properties.GM_NAAM] });
   landuse.forEach(function(d) { IndexbyGem2[d.Regio] = +d.Totale_oppervlakte_ha; });
   nederland.objects.Gemeentegrenzen.geometries.forEach(function(d) { d.properties.Totale_oppervlakte_ha = IndexbyGem2[d.properties.GM_NAAM] });
   landuse.forEach(function(d) { IndexbyGem3[d.Regio] = +(d.Agrarisch_terrein_ha/d.Totale_oppervlakte_ha); });
   nederland.objects.Gemeentegrenzen.geometries.forEach(function(d) { d.Percentage = IndexbyGem3[d.properties.GM_NAAM] });
+  landuse.forEach(function(d) { IndexbyGem4[d.Regio] = +d.Agrarisch_terrein_ha; });
+  nederland.objects.Gemeentegrenzen.geometries.forEach(function(d) { d.properties.Agrarisch_terrein_ha = IndexbyGem4[d.properties.GM_NAAM] });
 
   console.log(nederland)
   console.log(landuse)
